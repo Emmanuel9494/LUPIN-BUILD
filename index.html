@@ -8,14 +8,15 @@
 <body>
  <header>
   <h1>All About the Team</h1>
-  <img src="images/Lupin-logo.svg" alt="lupin logo">
+  <img src="images/Lupin-logo.svg" alt="lupin logo" id="lupin-logo">
  </header>
 
  <main>
- <nav>
-    <ul>
+ <nav id="lupin-nav">
+    <ul class="first-lupin">
       <li>
        <a href="#lightbox">
+        <div class="sprite" id="lupin"></div>
        <h2>Arsene Lupin III (ルパン三世)</h2>
      </a>
 <img src="images/Lupin-colored.jpg" alt="Lupin">
@@ -23,6 +24,7 @@
 
      <li>
        <a href="#lightbox">
+        <div class="sprite" id="jigen"></div>
         <h2>Daisuke Jigen (次元 大介)</h2>
        </a>
 <img src="images/jigen-colored.jpg" alt="Jigen">
@@ -30,6 +32,7 @@
 
         <li>
       <a href="#lightbox">
+        <div class="sprite" id="fujiko"></div>
        <h2>Fujiko Mine (峰 不二子)</h2>
        </a>
 <img src="images/Fujiko-colored.jpg" alt="Fujiko">
@@ -37,6 +40,7 @@
 
 <li>
 <a href="#lightbox">
+    <div class="sprite" id="goemon"></div>
 <h2>Goemon Ishikawa XIII (石川 五ェ門)</h2>
 </a>
 <img src="images/Goemon-colored.jpg" alt="Goemon">
@@ -44,6 +48,7 @@
 
 <li>
 <a href="#lightbox">
+    <div class="sprite" id="zenegata"></div>
 <h2>Kouichi Zenigata (銭形 幸一)</h2>
 </a>
 <img src="images/zenegata-colored.jpg" alt="Zenegata">
@@ -51,13 +56,13 @@
 </ul>
 </nav>
 
-<section>
+<section id="guide">
 <h2>Choose your hero!</h2>
 <p>Use your mouse to hover / click to discover more about each Marvel hero</p>
 </section>
 </main>
 
-<footer>
+<footer class="sticky-footer">
 <h3>All Images &copy; Lupin-myanimelist.net/</h3>
 </footer>
 </body>
