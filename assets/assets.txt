@@ -1,0 +1,1 @@
+This folder contains all assets used for this website, PS files, Notes etc.

@@ -1,0 +1,1 @@
+This folder is mainly for all CSS files. Used for styling this website.

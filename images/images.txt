@@ -1,0 +1,1 @@
+This folder is for all properly compresssed images used for this website. png, jpg and svg
