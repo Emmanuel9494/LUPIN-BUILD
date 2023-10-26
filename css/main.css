@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Main header rules */
+
+header{
+    background-color: rgb(255, 0, 0);
+    padding: 10px 0px;
+}
+
+#lupin-logo{
+    width: 300px;
+    display: block;
+    margin: 0px auto;
+}
+
+#lupin-nav{
+   background-color: #675050;
+   background-image: url('../images/Lupin-comic.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode:hard-light;
+}
+
+.first-lupin{
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 0px;
+}
+
+.first-lupin li{
+    height: 220px;
+    margin: 10px 8px; 
+    background-color: black;
+    text-align: left;
+    cursor: pointer;
+    transition: box-shadow 1s ;
+    box-shadow: 0px 155px 0px 0px rgb(255, 0, 0 ) inset;
+}
+
+.first-lupin li:hover{
+    box-shadow: 0px 220px 0 0 rgb(255,0, 0) inset;
+
+}
+
+.first-lupin li h2{
+    color: #ffffff;
+    padding: 12px 8px;
+}
+
+.first-lupin li a{
+    text-decoration: none;
+    font-size: 8px;
+}
+
+/* Sprites */
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/Lupin-sprites.jpg');
+}
+
+#lupin {
+    background-position: 0px 0px;
+}
+
+#jigen {
+    background-position: -150px 0px
+}
+
+#fujiko {
+    background-position: -300px 0px;
+}
+
+#goemon {
+    background-position: -450px 0px;
+}
+
+#zenegata {
+    background-position: -600px 0px;
+}
+
+#lupin:hover, #jigen:hover, #fujiko:hover, #goemon:hover, #zenegata:hover {
+    background-position-y: -150px;
+}
+
+
+
+
+/* Initial state */
+.pop-up {
+    transform: scale(1);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover state */
+  .pop-up:hover {
+    transform: scale(1.1);
+  }
+
+
+  
+
+
+
+/* Footer rules */
+
+footer{
+    color:#ffffff;
+    padding: 20px 0px;
+    text-align: center;
+}
