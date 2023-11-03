@@ -46,13 +46,13 @@ header{
     margin: 10px 8px; 
     background-color: black;
     text-align: left;
-    cursor: pointer;
     transition: box-shadow 1s ;
     box-shadow: 0px 155px 0px 0px rgb(255, 0, 0 ) inset;
 }
 
 .first-lupin li:hover{
     box-shadow: 0px 220px 0 0 rgb(255,0, 0) inset;
+    cursor: crosshair;
 
 }
 
@@ -64,6 +64,30 @@ header{
 .first-lupin li a{
     text-decoration: none;
     font-size: 8px;
+}
+
+article, #guide{
+    padding: 20px;
+}
+
+article h3, #guide h2{
+    font-size: 32px;
+    text-align:center;
+    margin-bottom: 14px;
+}
+
+article p, #guide p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+span {
+    text-align:center;
+    font-weight: bolder;  
+    color: rgb(216, 30, 5); 
 }
 
 /* Sprites */
@@ -123,4 +147,80 @@ footer{
     color:#ffffff;
     padding: 20px 0px;
     text-align: center;
+}
+
+.stickyfooter{
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color: rgb(40, 30, 37);
+}
+
+.lightbox{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.884);
+    background-image: url(../images/lupin-lbox.png);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    z-index: 5000; /*max will not hurt, better safe than buging*/
+    display: none;
+}
+
+#lightbox2{
+    background-image: url(../images/jigen-lbox.png);
+}
+
+
+#lightbox3{
+    background-image: url(../images/fujiko-lbox.png);
+
+}
+
+
+#lightbox4{
+    background-image: url(../images/goemon-lbox.png);
+}
+
+#lightbox5{
+    background-image: url(../images/zenigata-lbox.png);
+}
+
+.lightbox_close{
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox_close:hover{
+    opacity: 0.5;
+    color: red;
+}
+
+.lightbox article{
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading {
+    text-align: left;
+}
+
+.lb_text{
+    margin-left: 0px;
+    padding-top: 32px;
+    line-height: 1.6 !important;
+}
+
+.lightbox:target{
+    display: block;
 }
